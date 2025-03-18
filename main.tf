@@ -5,6 +5,6 @@ module "create_s3" {
 
 module "create_dynamoDB" {
     source = "./modules/create_dynamoDB"
-    dynamodb_table_name = var.root_dynamo_name
+    my_dynamo_db = var.root_dynamo_name
   
 }
