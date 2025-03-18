@@ -1,5 +1,5 @@
 terraform {
-  backend "aws_s3_bucket" {
+  backend "aws" {
     bucket = var.root_bucket_name
     key = "dynamoDB/terraform.tfstate"
     use_lockfile = true
