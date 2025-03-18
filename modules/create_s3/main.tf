@@ -1,9 +1,9 @@
 resource "aws_s3_bucket" "bucket_for_statelock" {
     bucket = var.bucket_name
 
-    lifecycle {
-      prevent_destroy = true
-    }
+    # lifecycle {
+    #   prevent_destroy = true
+    # }
 }
 
 resource "aws_s3_bucket_versioning" "version-control" {
@@ -12,9 +12,9 @@ resource "aws_s3_bucket_versioning" "version-control" {
       status = "Enabled"
     }
 
-    lifecycle {
-      prevent_destroy = true
-    }  
+    # lifecycle {
+    #   prevent_destroy = true
+    # }  
 }
 
 resource "aws_s3_bucket_server_side_encryption_configuration" "SSE-s3-bucket" {
@@ -25,7 +25,7 @@ resource "aws_s3_bucket_server_side_encryption_configuration" "SSE-s3-bucket" {
         }
       }
 
-    lifecycle {
-      prevent_destroy = true
-    }  
+    # lifecycle {
+    #   prevent_destroy = true
+    # }  
 }
