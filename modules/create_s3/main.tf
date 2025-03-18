@@ -1,5 +1,5 @@
 resource "aws_s3_bucket" "bucket_for_statelock" {
-    bucket = my-bucket-backend
+    bucket = var.bucket_name
 
     lifecycle {
       prevent_destroy = true
