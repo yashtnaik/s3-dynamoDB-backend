@@ -1,10 +1,10 @@
 terraform {
   backend "s3" {
-    bucket = var.root_bucket_name
+    bucket = "s3-bucket-backend-yashtnaik"
     key = "dynamoDB/terraform.tfstate"
     use_lockfile = true
     region = "ap-south-1"
-    dynamodb_table = var.root_dynamo_name
+    dynamodb_table = "dynamanoDB_backend"
     encrypt = true
 
     
