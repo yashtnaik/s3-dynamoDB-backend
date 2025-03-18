@@ -25,7 +25,7 @@ resource "aws_s3_bucket_server_side_encryption_configuration" "SSE-s3-bucket" {
         }
       }
 
-    # lifecycle {
-    #   prevent_destroy = true
-    # }  
+    lifecycle {
+      prevent_destroy = true
+    }  
 }
