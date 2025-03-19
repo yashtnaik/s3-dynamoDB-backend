@@ -8,8 +8,8 @@ resource "aws_dynamodb_table" "dynamo_locking_table" {
       type = "S"
     }
 
-    # lifecycle {
-    #   prevent_destroy = true
-    # }  
+    lifecycle {
+      prevent_destroy = true
+    }  
   
 }
