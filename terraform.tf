@@ -1,6 +1,6 @@
 terraform {
   backend "s3" {
-    bucket = "s3-bucket-backend-yashtnaik"
+    bucket = "s3-bucket-backend-yashtnaik1"
     key = "yash/terraform.tfstate"
     use_lockfile = true
     region = "ap-south-1"
