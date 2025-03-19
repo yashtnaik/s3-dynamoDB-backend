@@ -4,7 +4,7 @@ terraform {
     key = "dynamoDB/terraform.tfstate"
     use_lockfile = true
     region = "ap-south-1"
-    dynamodb_table = "dynamanoDB_backend"
+    dynamodb_table = "dynamanoDB_for_backend"
     encrypt = true 
   }
 }
